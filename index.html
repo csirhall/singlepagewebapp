@@ -24,5 +24,15 @@
       <label for="date">Enter a date below:</label><br>
       <input type="date" id="date" name="date"><br>
     </form>
+    <button type="button" onclick=submit()>Calculate Age!</button>
+    <script>
+      function submit(){
+     const dateInput = document.getElementById("date").value;
+      var current_date = new Date();
+      var age = current_date - dateInput;
+      };
+       document.getElementById('age').textContent = "Your age is: " ${age};
+    </script>
+
   </body>
 </html>
