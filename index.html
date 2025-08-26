@@ -16,10 +16,10 @@
     <p><strong>Hello world!</strong></p>
     <p><a href="secondpage.html">More</a></p>
     -->
-    <h1>WHAT IS YOUR AGE?</h1>
+    <h1 style="color:blue;">WHAT IS YOUR AGE?</h1>
     <br>
     <img src ="clock.png" width=100 height=100>
-    <h3>Use the calculator below to determine your <strong>age</strong>! <br> Enter in your birthday (or someone's else) to start.</h3>
+    <h3 style="color:pink;">Use the calculator below to determine your <strong>age</strong>! <br> Enter in your birthday (or someone's else) to start.</h3>
      <form>
       <label for="date">Enter a date below:</label><br>
       <input type="date" id="date" name="date"><br>
@@ -41,7 +41,6 @@
     
     const current_date = new Date(); 
     const dateInput = new Date(document.getElementById("date").value);
-    
     
     document.getElementById("year").innerHTML = current_date.getFullYear() - dateInput.getFullYear() + " years";
     document.getElementById("month").innerHTML = (current_date.getMonth() + 1)  - (dateInput.getMonth() + 1) + " months";
