@@ -19,19 +19,36 @@
     <h1>WHAT IS YOUR AGE?</h1>
     <br>
     <img src ="clock.png" width=100 height=100>
-    <h3>Use the calculator below to determine your <strong>age</strong>! Enter in your birthday (or someone's else) to start.</h3>
+    <h3>Use the calculator below to determine your <strong>age</strong>! <br> Enter in your birthday (or someone's else) to start.</h3>
      <form>
       <label for="date">Enter a date below:</label><br>
       <input type="date" id="date" name="date"><br>
     </form>
-    <button type="button" onclick=submit()>Calculate Age!</button>
+    
+    <p id="demo">Your age is...</p>
+     <p id="age"></p>
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="currentDate"></p>
+    <button type="button" onclick=myFunction()>Calculate Age!</button>
+
+    
     <script>
-      function submit(){
-     const dateInput = document.getElementById("date").value;
-      var current_date = new Date();
-      var age = current_date - dateInput;
-      };
-       document.getElementById('age').textContent = "Your age is: " ${age};
+    
+    function myFunction(){
+    
+    const current_date = new Date(); 
+    const dateInput = new Date(document.getElementById("date").value);
+    
+    
+    document.getElementById("year").innerHTML = current_date.getFullYear() - dateInput.getFullYear() + " years";
+    document.getElementById("month").innerHTML = (current_date.getMonth() + 1)  - (dateInput.getMonth() + 1) + " months";
+    document.getElementById("currentDate").innerHTML = (current_date.getDate() + 1)  - (dateInput.getDate() + 1) + " days";
+    
+    var age =  dateInput.getFullYear() - currentDate.getFullYear();
+    }
+    
+       
     </script>
 
   </body>
