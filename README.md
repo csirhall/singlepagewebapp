@@ -1,4 +1,4 @@
-**CALCULATING AGE - CS39-AF SPA PROJECT**
+**CALCULATING AGE: CS39-AF SPA PROJECT**
 
 **Overview: Application overview and purpose**
 
