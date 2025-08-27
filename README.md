@@ -20,8 +20,11 @@ Finally, it utilizes CSS to style different colors and layouts to make the SPA l
 I started the development process by first brainstorming ideas 
 for a simple single page application. After I decided on a age calculator, I begin designing the
 basic layout with HTML using various header and paragraph tags as well as including an image. 
-I then began research into how to incorporate JavaScript functions to get the calculator to work. 
-I finally added some styling to the webpage and played around with different colors, margins, and
-layouts. There were many challenges throughout this project. One of the major challenges was 
-learning how to use JavaScript as I was not familar with it. It was also challenging to get
-the functions working and learning how to use the various methods in JavaScript. It was challenging to calculate a user's age and incorporate math and programming elements together. 
+I then began research into how to incorporate JavaScript functions to get the 
+calculator to work. I finally added some styling to the webpage and played around 
+with different colors, margins, and layouts. There were many challenges throughout this project. 
+One of the major challenges was learning how to use JavaScript as I was not familar with it. 
+It was also challenging to get the functions working and learning how to use the various methods 
+in JavaScript. 
+It was challenging to calculate a user's age and incorporate math and programming 
+elements together. 
