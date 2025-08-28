@@ -27,7 +27,7 @@
       <input type="date" id="date" name="date"><br>
     </form>
     
-    <h5 id="demo" style="color:red;">Your age is...</h5>
+    <h4 id="demo" style="color:red;">Your age is...</h4>
      <p id="age"></p>
     <p id="year"></p>
     <p id="month"></p>
@@ -45,8 +45,8 @@
     const dateInput = new Date(document.getElementById("date").value);
     
     document.getElementById("year").innerHTML = current_date.getFullYear() - dateInput.getFullYear() + " years";
-    document.getElementById("month").innerHTML = (current_date.getMonth())  - (dateInput.getMonth() + 1) + " months";
-    document.getElementById("currentDate").innerHTML = (current_date.getDate())  - (dateInput.getDate() + 1) + " days";
+    document.getElementById("month").innerHTML = (current_date.getMonth() + 1)  - (dateInput.getMonth() + 1) + " months";
+    document.getElementById("currentDate").innerHTML = (current_date.getDate())  - (dateInput.getDate()) + " days";
     
     var age =  dateInput.getFullYear() - currentDate.getFullYear();
     }
