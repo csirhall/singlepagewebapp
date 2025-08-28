@@ -41,12 +41,12 @@
     
     function myFunction(){
     
-    const current_date = new Date(); 
+    const current_date = new Date();
     const dateInput = new Date(document.getElementById("date").value);
     
     document.getElementById("year").innerHTML = current_date.getFullYear() - dateInput.getFullYear() + " years";
-    document.getElementById("month").innerHTML = (current_date.getMonth() + 1)  - (dateInput.getMonth() + 1) + " months";
-    document.getElementById("currentDate").innerHTML = (current_date.getDate() + 1)  - (dateInput.getDate() + 1) + " days";
+    document.getElementById("month").innerHTML = (current_date.getMonth())  - (dateInput.getMonth() + 1) + " months";
+    document.getElementById("currentDate").innerHTML = (current_date.getDate())  - (dateInput.getDate() + 1) + " days";
     
     var age =  dateInput.getFullYear() - currentDate.getFullYear();
     }
